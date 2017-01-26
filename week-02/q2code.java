@@ -9,9 +9,7 @@ Concept used: I have first used a tutorial from the internet(link added) to conn
 After that used the concept of FileInput Stream and GZIP input stream to read the file.
 Then using the schema provided in the book, I used substringfunction to parse the data
 Then I inserted the data into the database.
-I finally used 
-
-
+I finally used preparedstmt.setstring function to finalise the values. But my code is not working.
 */
 
 import java.io.BufferedReader;
