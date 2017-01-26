@@ -1,3 +1,6 @@
+//References: https://lstsal.wordpress.com/2015/08/23/mapreduce-programme-find-highest-temperature-for-each-year-in-ncdc-data-set/
+//References: http://beginnersbook.com/2013/12/java-string-substring-method-example/
+
 import java.io.BufferedReader;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
