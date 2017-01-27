@@ -93,6 +93,7 @@ public class q2code {
 	     preparedStmt.setString (30, qc5);
 	     preparedStmt.setString (31, atm_pressure);
              preparedStmt.setString (32, qc6);
+	     //// error because of 32 parameters.
 	     preparedStmt.executeUpdate();
 		}
 	}
