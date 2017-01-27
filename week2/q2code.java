@@ -9,7 +9,7 @@ Concept used: I have first used a tutorial from the internet(link added) to conn
 After that used the concept of FileInput Stream and GZIP input stream to read the file.
 Then using the schema provided in the book, I used substringfunction to parse the data
 Then I inserted the data into the database.
-
+I finally used preparedstmt.setstring function to finalise the values. But my code is not working.
 */
 import java.io.BufferedReader;
 import java.io.FileInputStream;
@@ -35,12 +35,12 @@ public class q2code {
 	   
 		FileInputStream f1 = new FileInputStream("/home/ubuntu/all/1990.gz"); //I put the .gz file in 'all' folder
 		GZIPInputStream g1 = new GZIPInputStream(f1);
-		//FileOutputStream f2 = new FileOutputStream("/home/ubuntu/all/1990.csv");
+		
 		Reader d1 = new InputStreamReader(g1);
-		BufferedReader b = new BufferedReader(d1);
+		BufferedReader br = new BufferedReader(d1);
 		//Reference of above part is: http://www.java2s.com/Code/Java/File-Input-Output/Readsomedatafromagzipfile.htm
 		String l1;
-		while((l1  = b.readLine()) != null){
+		while((l1  = br.readLine()) != null){
 		//System.out.println(line);
                 String ul1 = l1.substring(0,3);
                 String usafwsi = l1.substring(4,9);
