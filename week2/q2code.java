@@ -1,3 +1,16 @@
+//Reference: https://lstsal.wordpress.com/2015/08/23/mapreduce-programme-find-highest-temperature-for-each-year-in-ncdc-data-set/
+//Reference: http://beginnersbook.com/2013/12/java-string-substring-method-example/
+//Reference: http://www.java2s.com/Code/Java/File-Input-Output/Readsomedatafromagzipfile.htm
+//Reference: https://www.tutorialspoint.com/jdbc/jdbc-sample-code.htm
+//Reference: http://www.java2s.com/Code/JavaAPI/java.sql/PreparedStatementsetStringintparameterIndexStringx.htm
+
+/*
+Concept used: I have first used a tutorial from the internet(link added) to connect to the database.
+After that used the concept of FileInput Stream and GZIP input stream to read the file.
+Then using the schema provided in the book, I used substringfunction to parse the data
+Then I inserted the data into the database.
+
+*/
 import java.io.BufferedReader;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
@@ -14,15 +27,18 @@ import java.util.Calendar;
 public class q2code {
 	public static void main(String[] args) throws Exception {
 		 String myDriver = "org.gjt.mm.mysql.Driver";
-	     String myUrl = "jdbc:mysql://localhost/arjweek2";
+	     String myUrl = "jdbc:mysql://localhost/arjweek2"; //arjweek2 is name of the schema
 	     Class.forName(myDriver);
-	     Connection conn = DriverManager.getConnection(myUrl, "root", "password");
-	    
-		FileInputStream f1 = new FileInputStream("/home/ubuntu/all/1990.gz");
+	     Connection conn = DriverManager.getConnection(myUrl, "root", "password"); 
+		//this part has been taken from the internet
+		//Reference of above part is: https://www.tutorialspoint.com/jdbc/jdbc-sample-code.htm
+	   
+		FileInputStream f1 = new FileInputStream("/home/ubuntu/all/1990.gz"); //I put the .gz file in 'all' folder
 		GZIPInputStream g1 = new GZIPInputStream(f1);
 		//FileOutputStream f2 = new FileOutputStream("/home/ubuntu/all/1990.csv");
 		Reader d1 = new InputStreamReader(g1);
 		BufferedReader b = new BufferedReader(d1);
+		//Reference of above part is: http://www.java2s.com/Code/Java/File-Input-Output/Readsomedatafromagzipfile.htm
 		String l1;
 		while((l1  = b.readLine()) != null){
 		//System.out.println(line);
@@ -95,6 +111,7 @@ public class q2code {
              preparedStmt.setString (32, qc6);
 	     //// error because of 32 parameters.
 	     preparedStmt.executeUpdate();
+	     //Reference of above part is: http://www.java2s.com/Code/JavaAPI/java.sql/PreparedStatementsetStringintparameterIndexStringx.htm
 		}
 	}
 }
