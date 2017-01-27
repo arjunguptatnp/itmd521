@@ -9,7 +9,6 @@ Concept used: I have first used a tutorial from the internet(link added) to conn
 After that used the concept of FileInput Stream and GZIP input stream to read the file.
 Then using the schema provided in the book, I used substringfunction to parse the data
 Then I inserted the data into the database.
-I finally used preparedstmt.setstring function to finalise the values. But my code is not working.
 */
 import java.io.BufferedReader;
 import java.io.FileInputStream;
@@ -76,42 +75,6 @@ public class q2code {
                 String qc6 = l1.substring(103,104); //should be 104 only but we are not displaying it so no issues                        
                                
 		String query = "insert into  arjweek2(ul1,usafwsi,wban,Year,DateMonth,hour,ul2,latitude,longitude,ul3,elevation,ul4,ul5,wind_direction,qc1,ul6,ul7,ul8,sky_cieling,qc2,ul9,ul10,visibility,qc3,ul11,ul12,Temp,qc4,dew_point,qc5,atm_pressure,qc6);";
-		PreparedStatement preparedStmt = conn.prepareStatement(query);
-             preparedStmt.setString (1, ul1);
-	     preparedStmt.setString (2,usafwsi);
-	     preparedStmt.setString (3, wban);
-	     preparedStmt.setString (4, Year);
-	     preparedStmt.setString (5, DateMonth);
-	     preparedStmt.setString (6, hour);
-	     preparedStmt.setString (7, ul2);
-	     preparedStmt.setString (8, latitude);
-	     preparedStmt.setString (9, longitude);
-	     preparedStmt.setString (10, ul3);
-	     preparedStmt.setString (11, elevation);
-	     preparedStmt.setString (12, ul4);
-	     preparedStmt.setString (13, ul5);
-	     preparedStmt.setString (14, wind_direction);
-	     preparedStmt.setString (15, qc1);
-	     preparedStmt.setString (16, ul6);
-	     preparedStmt.setString (17, ul7);
-	     preparedStmt.setString (18, ul8);
-	     preparedStmt.setString (19, sky_cieling);
-	     preparedStmt.setString (20, qc2);
-	     preparedStmt.setString (21, ul9);
-	     preparedStmt.setString (22, ul10);
-	     preparedStmt.setString (23, visibity);
-	     preparedStmt.setString (24, qc3);
-	     preparedStmt.setString (25, ul11);
-	     preparedStmt.setString (26, ul12);
-	     preparedStmt.setString (27, Temp);
-	     preparedStmt.setString (28, qc4);
-	     preparedStmt.setString (29, dew_point);
-	     preparedStmt.setString (30, qc5);
-	     preparedStmt.setString (31, atm_pressure);
-             preparedStmt.setString (32, qc6);
-	     //// error because of 32 parameters.
-	     preparedStmt.executeUpdate();
-	     //Reference of above part is: http://www.java2s.com/Code/JavaAPI/java.sql/PreparedStatementsetStringintparameterIndexStringx.htm
 		}
 	}
 }
