@@ -22,6 +22,10 @@ S.No | Dataset       | Time Taken(in Sec)
 #### The time taken by each data set is represented in the following graph.
 ![image](https://cloud.githubusercontent.com/assets/25064372/24324791/b3587688-115a-11e7-9fbe-2189d9a6133c.png)
 
+### Explanation:
+1990.txt has the smallest size so the whole process of Map Reduce took the least amount of time to run on this file.
+
+1990-91-92-93.txt has the highest size so the whole process of Map Reduce took the maximum time to run on this file.
 
 
 
