@@ -10,7 +10,7 @@
 ![image](https://cloud.githubusercontent.com/assets/25064372/24324919/1384e0e4-115d-11e7-9fd7-cd2204e93996.png)
 
 
-#### The time taken by each data set (.txt.bz) is represented in the following table.
+#### The time taken by each data set (.txt) is represented in the following table.
 
 S.No | Dataset       | Time Taken(in Sec)
 ---  | ---           | ---
