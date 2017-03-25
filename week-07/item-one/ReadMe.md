@@ -5,6 +5,9 @@
 
 ![image](https://cloud.githubusercontent.com/assets/25064372/24324893/a5349c7e-115c-11e7-9b81-36ff95587a48.png)
 
+![image](https://cloud.githubusercontent.com/assets/25064372/24324918/067767d2-115d-11e7-82da-b0d0a9a0c08d.png)
+
+![image](https://cloud.githubusercontent.com/assets/25064372/24324919/1384e0e4-115d-11e7-9fd7-cd2204e93996.png)
 
 
 #### The time taken by each data set (.txt.bz) is represented in the following table.
