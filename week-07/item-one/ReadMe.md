@@ -1,5 +1,12 @@
 # Analysis of item one of week 7
 
+
+
+
+![image](https://cloud.githubusercontent.com/assets/25064372/24324893/a5349c7e-115c-11e7-9b81-36ff95587a48.png)
+
+
+
 #### The time taken by each data set (.txt.bz) is represented in the following table.
 
 S.No | Dataset       | Time Taken(in Sec)
@@ -11,6 +18,7 @@ S.No | Dataset       | Time Taken(in Sec)
 
 #### The time taken by each data set is represented in the following graph.
 ![image](https://cloud.githubusercontent.com/assets/25064372/24324791/b3587688-115a-11e7-9fbe-2189d9a6133c.png)
+
 
 
 
