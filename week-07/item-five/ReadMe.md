@@ -12,7 +12,7 @@
 S.No | Dataset         | Time Taken (seconds)
 ---  | ---             | ---
 1    | 1990            | 1089
-2    | 1990-93         | 1344
+2    | 1990-92         | 1344
 3    | 1990-91-92-93   | 2071
 
 #### The time taken by all files with bzip2 native hadoop compression with combiner is represented by the following graph and table.
@@ -23,7 +23,7 @@ S.No | Dataset         | Time Taken (seconds)
 S.No | Dataset         | Time Taken (seconds)
 ---  | ---             | ---
 1    | 1990            | 777
-2    | 1990-93         | 970
+2    | 1990-92         | 970
 3    | 1990-91-92-93   | 1264
 
 
