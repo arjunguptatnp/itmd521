@@ -23,11 +23,12 @@ S.No | Dataset       | Time Taken(in Sec)
 ![image](https://cloud.githubusercontent.com/assets/25064372/24324791/b3587688-115a-11e7-9fbe-2189d9a6133c.png)
 
 ### Explanation:
-1990.txt has the smallest size so the whole process of Map Reduce took the least amount of time to run on this file.
+
+#### 1) 1990.txt has the smallest size so the whole process of Map Reduce took the least amount of time to run on this file.
 
 1990-91-92-93.txt has the highest size so the whole process of Map Reduce took the maximum time to run on this file.
 
-
+#### 2) According to page 186, chapter 7, figure 7-1 talks about how Map Reduce works in a distributed cluster. The Map phase maps the data into key value pair which is sent to the shuffle phase. Then the output is passed to the reduce phase which basically groups the data and gives the necessary output. The resource manager plays a crucial role in this whole process as it allocates resources for the whole process. The node manager launches and computes the containers.
 
 
 
