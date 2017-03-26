@@ -108,7 +108,7 @@ S.No | Dataset         | Time Taken (seconds)
 
 ## Explanation: The explanation for this item has 2 parts.
 
-### 1) The first part is a simple notion used in the earlier item has well. Combiner acts like a local reducer and groups the output of the Map phase and sends this to the reduce phase so the reduce phasehas to less work and so it takes less time. So whenever a file is run with a normal MaxTemperature without combiner will take more time than a file which run with MaxTemperatureWithCombiner code.
+### 1) The first part is a simple notion used in the earlier item has well. According to page 34 in the text book, Combiner acts like a local reducer and groups the output of the Map phase and sends this to the reduce phase so the reduce phasehas to less work and so it takes less time. So whenever a file is run with a normal MaxTemperature without combiner will take more time than a file which run with MaxTemperatureWithCombiner code.
 ### 2) Coming to the second part, Chapter-5, Page 100 of the textbook, table 5-1 talks about compression(bzip2 and gz files). According to that fact, bzip compression compresses the file more efficiently.However, bzip is slower than gzip compression. So the time taken for gzip files to run is lesser than the time taken for bzio files to run 
 
 
