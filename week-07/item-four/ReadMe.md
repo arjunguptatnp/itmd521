@@ -34,7 +34,9 @@ S.No | Dataset        | Time Taken (seconds)
 
 #### 1) Like previous cases, page 34 of the book talks about combiner functions where combiner acts like a local reducer so it groups data from map phase and sends it to the reduce phase so the reduce phase has less work to do. So the time taken for a file to run against the MaxTemperature code will be more than the time taken by the file to run against the MaxTemperatureWithCombiner code.
 
-#### 2)  
+#### 2) In this item, all the jobs were run on .gz files. As discussed on page 34 of the text book under “Combiner functions”. Jobs run withCombiner tool less time to complete than jobs without Combiner as here intermediate compression logic was introduced. Intermediate Compression takes place at file level.
+
+Outputs of maps are compressed before being sent across the system  and the use of SequenceFile compression takes place. This is like compression of data between mapper and the reducer.  
 
 
 
