@@ -7,16 +7,18 @@ import org.apache.hadoop.mapreduce.lib.output.FileOutputFormat;
 import org.apache.hadoop.io.compress.BZip2Codec;
 import org.apache.hadoop.conf.Configuration;
 import org.apache.hadoop.io.compress.CompressionCodec;
-public class MaxTemperature {
+public class driveritem {
 
-  public static void main(String[] args) throws Exception {
-    if (args.length != 2) {
+  public static void main(String[] args) throws Exception
+ {
+    if (args.length != 2)
+ {
       System.err.println("Usage: MaxTemperature <input path> <output path>");
       System.exit(-1);
-    }
+ }
 Configuration configure = new Configuration();
-conf.setBoolean(Job.MAP_OUTPUT_COMPRESS, true);
-conf.setClass(Job.MAP_OUTPUT_COMPRESS_CODEC, BZip2Codec.class, CompressionCodec.class);
+configure.setBoolean(Job.MAP_OUTPUT_COMPRESS, true);
+configure.setClass(Job.MAP_OUTPUT_COMPRESS_CODEC, BZip2Codec.class, CompressionCodec.class);
 Job job = new Job(configure);
 
     job.setJarByClass(MaxTemperature.class);
