@@ -23,13 +23,15 @@ S.No | DataSet       | Time Taken
 
 ![image](https://cloud.githubusercontent.com/assets/25064372/24325095/2b776fde-1160-11e7-8e00-e6e68ab2815b.png)
 
-Explanation: Like item-one, 1990.txt has smallest size so time taken is least and 1990-91-92-93.txt has the highest size so time taken is maximum.
+Explanation:
 
-However the interesting thing to note is the time taken by individual dataset and comparing them with item-one as here, code used is MaxTemperatureWithCombiner.
+1)  Like item-one, 1990.txt has smallest size so time taken is least and 1990-91-92-93.txt has the highest size so time taken is maximum.
 
-1990.txt with combiner has taken 383 seconds. The same file when run against MaxTemperature code took 531 seconds.
+2) However the interesting thing to note is the time taken by individual dataset and comparing them with item-one as here, code used is MaxTemperatureWithCombiner.
 
-Combiner actually assits the process of Map Reduce. It is a sort of a local reducer. It combines output of Map process and sends this as input to reduce phase.
+   1990.txt with combiner has taken 383 seconds. The same file when run against MaxTemperature code took 531 seconds.
+
+   According to the topic "Combiner Functions" on Page 34 in the text book, Combiner actually assits the process of Map Reduce. It is a sort of a local reducer. It combines output of Map process and sends this as input to reduce phase.
 
 So reducer has less amount of work to do and hence the time taken with combiner phase included is less.
 
