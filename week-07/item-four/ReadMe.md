@@ -30,7 +30,11 @@ S.No | Dataset        | Time Taken (seconds)
 
 
 
-Explanation: 
+### Explanation: The explanation has 2 parts.
+
+#### 1) Like previous cases, page 34 of the book talks about combiner functions where combiner acts like a local reducer so it groups data from map phase and sends it to the reduce phase so the reduce phase has less work to do. So the time taken for a file to run against the MaxTemperature code will be more than the time taken by the file to run against the MaxTemperatureWithCombiner code.
+
+#### 2)  
 
 
 
