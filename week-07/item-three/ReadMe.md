@@ -46,7 +46,7 @@
 S.No | Dataset         | Time taken (seconds)
 ---  | ---             | ---
 1    | 1990            | 1296
-2    | 1990-93         | 1891
+2    | 1990-92         | 1891
 3    | 1990-91-92-93   | 1962
 
 #### Time taken by uncompressed files with combiner is represented in the following graph and table.
@@ -57,7 +57,7 @@ S.No | Dataset         | Time taken (seconds)
 S.No | Dataset         | Time Taken (seconds)
 ---  | ---             | ---
 1    | 1990            | 632
-2    | 1990-93         | 844
+2    | 1990-92         | 844
 3    | 1990-91-92-93   | 1057
 
 #### Time taken by bzip2 files without combiner is represented in the following graph and table.
@@ -68,7 +68,7 @@ S.No | Dataset         | Time Taken (seconds)
 S.No | Dataset         | Time Taken (seconds)
 ---  | ---             | ---
 1    | 1990            | 979
-2    | 1990-93         | 1102
+2    | 1990-92         | 1102
 3    | 1990-91-92-93   | 1397
 
 #### Time taken by bzip2 files with combiner is represented in the following graph and table.
@@ -79,7 +79,7 @@ S.No | Dataset         | Time Taken (seconds)
 S.No | Dataset         | Time Taken (seconds)
 ---  | ---             | ---
 1    | 1990            | 381
-2    | 1990-93         | 500
+2    | 1990-92         | 500
 3    | 1990-91-92-93   | 674
 
 #### Time taken by gzip files without combiner is represented in the following graph and table.
@@ -90,7 +90,7 @@ S.No | Dataset         | Time Taken (seconds)
 S.No | Dataset         | Time Taken (seconds)
 ---  | ---             | ---
 1    | 1990            | 408
-2    | 1990-93         | 799
+2    | 1990-92         | 799
 3    | 1990-91-92-93   | 1562
 
 #### Time taken by gzip files with combiner is represented in the following graph and table.
@@ -101,7 +101,7 @@ S.No | Dataset         | Time Taken (seconds)
 S.No | Dataset         | Time Taken (seconds)
 ---  | ---             | ---
 1    | 1990            | 297
-2    | 1990-93         | 474
+2    | 1990-92         | 474
 3    | 1990-91-92-93   | 949
 
 
@@ -109,7 +109,7 @@ S.No | Dataset         | Time Taken (seconds)
 ## Explanation: The explanation for this item has 2 parts.
 
 ### 1) The first part is a simple notion used in the earlier item has well. According to page 34 in the text book, Combiner acts like a local reducer and groups the output of the Map phase and sends this to the reduce phase so the reduce phasehas to less work and so it takes less time. So whenever a file is run with a normal MaxTemperature without combiner will take more time than a file which run with MaxTemperatureWithCombiner code.
-### 2) Coming to the second part, Chapter-5, Page 100 of the textbook, table 5-1 talks about compression(bzip2 and gz files). According to that fact, bzip compression compresses the file more efficiently.However, bzip is slower than gzip compression. So the time taken for gzip files to run is lesser than the time taken for bzio files to run 
+### 2) Coming to the second part, Chapter-5, Page 100 of the textbook, table 5-1 talks about compression(bzip2 and gz files). According to that fact, bzip compression compresses the file more efficiently.However, bzip is slower than gzip compression. So the time taken for gzip files to run is lesser than the time taken for bzip files to run 
 
 
 
