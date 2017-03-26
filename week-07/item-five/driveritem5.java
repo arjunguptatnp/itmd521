@@ -7,7 +7,7 @@ import org.apache.hadoop.mapreduce.lib.output.FileOutputFormat;
 import org.apache.hadoop.io.compress.BZip2Codec;
 import org.apache.hadoop.conf.Configuration;
 import org.apache.hadoop.io.compress.CompressionCodec;
-public class driveritem {
+public class driveritem5 {
 
   public static void main(String[] args) throws Exception
  {
