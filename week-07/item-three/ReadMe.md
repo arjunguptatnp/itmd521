@@ -43,32 +43,66 @@
 ![image](https://cloud.githubusercontent.com/assets/25064372/24327079/974f25ae-118c-11e7-864f-2ac0d5c47d11.png)
 
 
+S.No | Dataset         | Time taken (seconds)
+---  | ---             | ---
+1    | 1990            | 1296
+2    | 1990-93         | 1891
+3    | 1990-91-92-93   | 1962
+
 #### Time taken by uncompressed files with combiner is represented in the following graph.
 
 ![image](https://cloud.githubusercontent.com/assets/25064372/24327096/7c98e33e-118d-11e7-8226-ff4e84784a2d.png) 
 
+
+S.No | Dataset         | Time Taken (seconds)
+---  | ---             | ---
+1    | 1990            | 632
+2    | 1990-93         | 844
+3    | 1990-91-92-93   | 1057
 
 #### Time taken by bzip2 files without combiner is represented in the following graph.
 
 ![image](https://cloud.githubusercontent.com/assets/25064372/24327103/c3100072-118d-11e7-952f-489cb1b32c86.png)
 
 
+S.No | Dataset         | Time Taken (seconds)
+---  | ---             | ---
+1    | 1990            | 979
+2    | 1990-93         | 1102
+3    | 1990-91-92-93   | 1397
+
 #### Time taken by bzip2 files with combiner is represented in the following graph.
 
 ![image](https://cloud.githubusercontent.com/assets/25064372/24327108/e8b9428e-118d-11e7-9ae3-a59afee090f7.png)
 
+
+S.No | Dataset         | Time Taken (seconds)
+---  | ---             | ---
+1    | 1990            | 381
+2    | 1990-93         | 500
+3    | 1990-91-92-93   | 674
 
 #### Time taken by gzip files without combiner is represented in the following graph.
 
 ![image](https://cloud.githubusercontent.com/assets/25064372/24327110/06ad82d2-118e-11e7-8d10-024ae400722d.png)
 
 
+S.No | Dataset         | Time Taken (seconds)
+---  | ---             | ---
+1    | 1990            | 408
+2    | 1990-93         | 799
+3    | 1990-91-92-93   | 1562
+
 #### Time taken by gzip files with combiner is represented in the following graph.
 
 ![image](https://cloud.githubusercontent.com/assets/25064372/24327115/2f324f76-118e-11e7-83ce-e66df198f617.png)
 
 
-
+S.No | Dataset         | Time Taken (seconds)
+---  | ---             | ---
+1    | 1990            | 297
+2    | 1990-93         | 474
+3    | 1990-91-92-93   | 949
 
 
 
